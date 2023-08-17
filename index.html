@@ -77,60 +77,129 @@
                     <span>Download CSV</span>
                 </a>
             </div>
-        </main>
-        <form>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form2Example1" class="form-control" />
-              <label class="form-label" for="form2Example1">Email address</label>
-            </div>
-          
-            <!-- Password input -->
-            <div class="form-outline mb-4">
-              <input type="password" id="form2Example2" class="form-control" />
-              <label class="form-label" for="form2Example2">Password</label>
-            </div>
-          
-            <!-- 2 column grid layout for inline styling -->
-            <div class="row mb-4">
-              <div class="col d-flex justify-content-center">
-                <!-- Checkbox -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                  <label class="form-check-label" for="form2Example31"> Remember me </label>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            1,074
+                        </h3>
+                        <p>Paid Order</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            3,944
+                        </h3>
+                        <p>Site Visit</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            14,721
+                        </h3>
+                        <p>Searches</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            $6,742
+                        </h3>
+                        <p>Total Sales</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Recent Orders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-              </div>
-          
-              <div class="col">
-                <!-- Simple link -->
-                <a href="#!">Forgot password?</a>
-              </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Remiders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Start Our Meeting</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analyse Our Site</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Play Footbal</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
             </div>
-          
-            <!-- Submit button -->
-            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
-          
-            <!-- Register buttons -->
-            <div class="text-center">
-              <p>Not a member? <a href="#!">Register</a></p>
-              <p>or sign up with:</p>
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
-          
-              <button type="button" class="btn btn-link btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
-          </form>
+
+        </main>
+
     </div>
 
     <script src="index.js"></script>
